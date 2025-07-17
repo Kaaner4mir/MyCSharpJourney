@@ -104,7 +104,7 @@
 
             result = Math.Round(result);
 
-            if(double.IsNaN(result) || double.IsInfinity(result)) return $"Bilinmeyen bir hata oluştu!";
+            if (double.IsNaN(result) || double.IsInfinity(result)) return $"\nBilinmeyen bir hata oluştu!";
 
             return $"Sonuç : {result}";
         }
