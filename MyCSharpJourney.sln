@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{CE90EE6B-608C-4E18-BCBB-5F161419409A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPACalculator", "GPACalculator\GPACalculator.csproj", "{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CE90EE6B-608C-4E18-BCBB-5F161419409A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE90EE6B-608C-4E18-BCBB-5F161419409A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE90EE6B-608C-4E18-BCBB-5F161419409A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

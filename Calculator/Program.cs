@@ -8,7 +8,6 @@
             DisplayMenu();
         }
     }
-
     private static void Continue()
     {
         Console.CursorVisible = false;
@@ -302,5 +301,4 @@
             return $"Hata oluştu: {ex.Message}";
         }
     }
-
 }
