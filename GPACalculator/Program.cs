@@ -1,4 +1,6 @@
-﻿class GPACalculator
+﻿using System.Text;
+
+class GPACalculator
 {
     enum LetterGrade
     {
@@ -6,13 +8,14 @@
     }
     public static void Main()
     {
+        Console.OutputEncoding = Encoding.UTF8;
         while (true)
         {
             double average = CalculateAverage(GetExamGrades());
             DisplayResults(average);
 
             Console.CursorVisible = false;
-            Console.WriteLine("\nDevam etmek için bir tuşa basınız...");
+            Console.WriteLine("\n➡️ Devam etmek için bir tuşa basınız...");
             Console.ReadKey();
             Console.Clear();
             Console.CursorVisible = true;
@@ -24,27 +27,27 @@
         int examCount;
         while (true)
         {
-            Console.Write("Sınav sayısını giriniz: ");
+            Console.Write("🔢 Sınav sayısını giriniz: ");
             if (int.TryParse(Console.ReadLine(), out examCount) && examCount > 0)
                 break;
 
-            WriteError("Geçersiz sayı girdiniz! Lütfen pozitif bir tam sayı giriniz.");
+            WriteError("❌ Geçersiz sayı girdiniz! Lütfen pozitif bir tam sayı giriniz.");
         }
 
         double[] grades = new double[examCount];
-
+        Console.WriteLine();
         for (int i = 0; i < examCount; i++)
         {
             while (true)
             {
-                Console.Write($"{i + 1}. notunuzu giriniz (0-100): ");
+                Console.Write($"🖊️ {i + 1}. notunuzu giriniz (0-100): ");
                 if (double.TryParse(Console.ReadLine(), out double grade) &&
                     grade >= 0 && grade <= 100)
                 {
                     grades[i] = grade;
                     break;
                 }
-                WriteWarning("Not 0 ile 100 arasında olmalıdır.");
+                WriteWarning("❗Not 0 ile 100 arasında olmalıdır.");
             }
         }
 
@@ -64,8 +67,8 @@
     private static void DisplayResults(double average)
     {
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"\nOrtalama: {average:F2}");
-        Console.WriteLine($"Harf Notu: {GetLetterGrade(average)}");
+        Console.WriteLine($"\n📈 Ortalama: {average:F2}");
+        Console.WriteLine($"📈 Harf Notu: {GetLetterGrade(average)}");
         Console.ResetColor();
     }
     /// <summary> Ortalamaya göre harf notunu enum olarak döndürür. </summary>
