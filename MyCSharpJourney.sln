@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPACalculator", "GPACalcula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetTrackingProgram", "BudgetTrackingProgram\BudgetTrackingProgram.csproj", "{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMITracker", "BMITracker\BMITracker.csproj", "{94899FBC-9A97-4110-B69C-259A1B080A1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94899FBC-9A97-4110-B69C-259A1B080A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94899FBC-9A97-4110-B69C-259A1B080A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94899FBC-9A97-4110-B69C-259A1B080A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94899FBC-9A97-4110-B69C-259A1B080A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
