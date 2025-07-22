@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPACalculator", "GPACalculator\GPACalculator.csproj", "{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetTrackingProgram", "BudgetTrackingProgram\BudgetTrackingProgram.csproj", "{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{075FA8A8-9BC4-460C-9FF9-F729CBBE335B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7D0941-190C-4AC2-9A72-9684D53D4F9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
