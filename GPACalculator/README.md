@@ -1,87 +1,44 @@
-GPACalculator
-Konsol tabanlı bir not ortalaması ve harf notu hesaplayıcısıdır. Kullanıcıdan alacağı sınav sayısı ve notlar üzerinden geçerli aralıkta kontrol ederek ortalama hesaplar, ardından enum tabanlı switch ifadesiyle harf notunu belirler. Hata ve uyarı durumlarında renkli mesajlar ve emoji’ler kullanılarak kullanıcı deneyimi zenginleştirilmiştir.
+# GPA (Not Ortalaması) Hesaplayıcı 🧮
 
-Özellikler
-Dinamik sınav sayısı girişi
+Bu C# konsol uygulaması, kullanıcıdan alınan sınav notlarına göre ortalama hesaplar ve bu ortalamaya karşılık gelen harf notunu (`AA`, `BA`, `BB` ...) gösterir.
 
-Not validasyonu (0–100 aralığında)
+## 🚀 Özellikler
 
-Ortalama hesaplama
+- İstenilen sayıda sınav notu girilebilir.
+- Her bir notun 0 ile 100 arasında olması kontrol edilir.
+- Girilen notlara göre:
+  - Ortalama hesaplanır.
+  - Harf karşılığı belirlenir.
+- Kullanıcı dostu uyarı ve hata mesajları.
+- Sonsuz döngü ile tekrar tekrar hesaplama yapılabilir.
 
-Harf notu belirleme (FF’den AA’ya)
+## 📋 Kullanım
 
-Sürekli çalıştırma döngüsü
+1. Uygulama çalıştırılır.
+2. Sınav sayısı girilir (pozitif tam sayı).
+3. Her bir sınav için 0-100 aralığında not girilir.
+4. Ortalama ve harf notu görüntülenir.
+5. Devam etmek için herhangi bir tuşa basılarak yeni hesaplama yapılabilir.
 
-Renkli hata (kırmızı) ve uyarı (sarı) mesajları
+## 🔤 Harf Notu Aralıkları
 
-Konsol çıktılarına emoji desteği
+| Ortalama       | Harf Notu |
+|----------------|-----------|
+| 90 - 100       | AA        |
+| 85 - 89        | BA        |
+| 80 - 84        | BB        |
+| 75 - 79        | CB        |
+| 70 - 74        | CC        |
+| 65 - 69        | DC        |
+| 60 - 64        | DD        |
+| 50 - 59        | FD        |
+| 0  - 49        | FF        |
 
-Gereksinimler
-.NET 5.0 veya üzeri SDK
+## 📦 Gereksinimler
 
-İşletim Sistemi: Windows, macOS veya Linux
+- .NET 6 veya üzeri
+- Visual Studio 2022 / Visual Studio Code
 
-Tercihen Visual Studio Code veya benzeri bir IDE
+## 📄 Lisans
 
-Kurulum
-Depoyu klonlayın:
-
-bash
-git clone https://github.com/kullaniciAdin/GPACalculator.git
-Proje dizinine gidin:
-
-bash
-cd GPACalculator
-Bağımlılıkları yükleyip derleyin:
-
-bash
-dotnet restore
-dotnet build
-Çalıştırma
-Aşağıdaki komutla uygulamayı başlatın:
-
-bash
-dotnet run --project GPACalculator.csproj
-Uygulama her çalıştırıldığında:
-
-Sınav sayısını girmenizi ister.
-
-Her notu tek tek doğrular.
-
-Ortalama ve harf notunuzu renkli şekilde ekrana yazar.
-
-Devam etmek için bir tuşa basmanızı bekler, ardından ekranı temizler.
-
-Kod Yapısı
-enum LetterGrade Harf notlarını FF–AA aralığında tanımlar.
-
-GetExamGrades() Sınav sayısı ve not girişi ile validasyon işlemlerini yürütür.
-
-CalculateAverage(double[]) Girilen notların ortalamasını döndürür.
-
-GetLetterGrade(double) Ortalama değerine göre enum eşlemesi yapar.
-
-DisplayResults(double) Ortalama ve harf notunu yeşil renkte ekrana basar.
-
-WriteError(string) / WriteWarning(string) Hata ve uyarı mesajlarını ilgili renkte gösterir.
-
-Özelleştirme Fırsatları
-Harf notu aralıklarını değiştirmek için GetLetterGrade içindeki switch ifadelerini güncelleyebilirsiniz.
-
-Yeni mesaj stilleri ve renk kombinasyonları eklemek için Console.ForegroundColor ayarlarını özelleştirebilirsiniz.
-
-Döngüyü kaldırıp tek seferlik çalışacak şekilde while (true) yerine direkt Main akışını tercih edebilirsiniz.
-
-Katkıda Bulunma
-Bu repoyu fork’layın.
-
-Yeni bir branch açın (git checkout -b feature/özellik-adi).
-
-Değişikliklerinizi commit edin (git commit -m "Yeni özellik ekledim").
-
-Branch’inizi push’layın (git push origin feature/özellik-adi).
-
-GitHub’daki pull request oluşturma sürecini tamamlayın.
-
-Lisans
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar LICENSE dosyasında yer almaktadır.
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.

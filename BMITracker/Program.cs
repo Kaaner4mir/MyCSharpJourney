@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 class Program
 {
@@ -23,7 +22,7 @@ class Program
 
     private static double BMICalculator(double weight, double height)
     {
-        return weight / Math.Pow(height, 2); 
+        return weight / Math.Pow(height, 2);
     }
 
     private static string BMIResult(double bmi)
